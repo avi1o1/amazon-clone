@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+
+body {
+    background-color: rgba(6, 54, 6, 0.88);
+}
+
+/* NavBar */
+.border {
+    border: 2px solid transparent;
+}
+
+.border:hover {
+    border: 2px solid white;
+}
+
+a {
+    text-decoration: none;
+    color: #007185;
+}
+
+#navbar {
+    height: 60px;
+    background-color: #0F1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#nav-logo {
+    width: 120px;
+    height: 50px;
+}
+
+#logo-img {
+    background-image: url("Resources/logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}
+
+#add-up {
+    color: #CCCCCC;
+    font-size: 0.85rem;
+    margin-left: 15px;
+}
+
+#loc {
+    display: flex;
+}
+
+#add-down {
+    color: white;
+    font-size: 1rem;
+    margin-left: 4px;
+    font-weight: bolder;
+}
+
+#nav-search {
+    display: flex;
+    width: 1200px;
+    height: 40px;
+    border-radius: 7px;
+    justify-content: space-evenly;
+}
+
+#nav-search:hover {
+    border: 3px solid orange;
+}
+
+#select-menu {
+    background-color: #F3F3F3;
+    font-size: 1rem;
+    width: 75px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+}
+
+#searchbar {
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+
+#search {
+    width: 75px;
+    display: flex;
+    font-size: 1.5rem;
+    color: black;
+    background-color: #FEBD69;
+
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+#msg {
+    font-size: 0.85rem;
+    margin-left: 5px;
+    color: #CCCCCC;
+}
+
+#acc-lst {
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    font-size: 1rem;
+    border: none
+}
+
+#ret {
+    font-size: 0.85rem;
+    margin-left: 1px;
+    color: #CCCCCC;
+}
+
+#ord {
+    color: white;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+#cart {
+    display: flex;
+    font-size: 1rem;
+    align-items: end;
+}
+
+#cart-logo {
+    font-size: 1.5rem;
+}
+
+#cart-text {
+    color: white;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+/* Panel */
+#panel {
+    height: 40px;
+    background-color: #222F3D;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#panel-list {
+    display: flex;
+}
+
+
+#pan-ops {
+    width: 70%
+}
+
+#pan-ops p {
+    display: inline;
+    font-size: 1rem;
+    margin: 15px;
+}
+
+#pan-deals {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Hero Section */
+#hero-sec {
+    height: 500px;
+    background-image: url(Resources/hero-img.jpg);
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#hero-msg {
+    background-color: white;
+    color: black;
+    height: 40px;
+    width: 75%;
+    border-radius: 5px;
+    font-size: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 100px;
+}
+
+/* Shop Section */
+#menu {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+}
+
+#menu p {
+    color: #007185;
+}
+
+#menu h2 {
+    font-size: 1.75rem;
+    font-weight: 900;
+}
+
+.box {
+    height: 420px;
+    width: 21%;
+    background-color: white;
+    padding: 20px 1rem 15px 1rem;
+    margin-top: 25px;
+}
+
+/* Footer */
+.box-img {
+    height: 340px;
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
+    background-size: cover;
+}
+
+footer {
+    margin-top: 15px;
+}
+
+#to-top {
+    background-color: #37475A;
+    color: white;
+    height: 50px;
+    font-size: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lsts {
+    background-color: #222F3D;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#lsts a {
+    color: #DDDDDD;
+    font-size: 0.85rem;
+    font-weight: 300;
+    margin-top: 10px;
+
+    display: block;
+}
+
+#creds {
+    height: 70px;
+    background-color: #0F1111;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#foot-logo {
+    height: 50px;
+    width: 120px;
+    background-image: url("Resources/logo.png");
+    background-size: cover;
+}
+
+#legal {
+    background-color: #0F1111;
+    color: #DDDDDD;
+    height: 100px
+}
+
+#links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-top: 0.5px solid #CCCCCC;
+    padding: 20px;
+}
+
+#links a {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#copyright {
+    text-align: center;
+    padding-bottom: 20px;
+}

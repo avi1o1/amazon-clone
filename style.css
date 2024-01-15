@@ -6,23 +6,10 @@
 }
 
 body {
-    background-color: rgba(6, 54, 6, 0.88);
+    background-color: rgba(0, 72, 68, 0.75);
 }
 
 /* NavBar */
-.border {
-    border: 2px solid transparent;
-}
-
-.border:hover {
-    border: 2px solid white;
-}
-
-a {
-    text-decoration: none;
-    color: #007185;
-}
-
 #navbar {
     height: 60px;
     background-color: #0F1111;
@@ -33,14 +20,13 @@ a {
 }
 
 #nav-logo {
-    width: 120px;
-    height: 50px;
+    width: 6%;
 }
 
 #logo-img {
     background-image: url("Resources/logo.png");
     background-size: cover;
-    height: 50px;
+    height: 50px;   
     width: 100%;
 }
 
@@ -63,7 +49,7 @@ a {
 
 #nav-search {
     display: flex;
-    width: 1200px;
+    width: 60%;
     height: 40px;
     border-radius: 7px;
     justify-content: space-evenly;
@@ -87,6 +73,7 @@ a {
     width: 100%;
     font-size: 1rem;
     border: none;
+    padding-left: 10px;
 }
 
 #search {
@@ -128,14 +115,15 @@ a {
     font-size: 1rem;
 }
 
-#cart {
-    display: flex;
-    font-size: 1rem;
-    align-items: end;
+#cart a{
+    color: white;
+    text-decoration: none;
 }
 
 #cart-logo {
     font-size: 1.5rem;
+    display: flex;
+    align-items: end;
 }
 
 #cart-text {
@@ -149,29 +137,29 @@ a {
     height: 40px;
     background-color: #222F3D;
     color: white;
+    
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-#panel-list {
+#panel a {
+    color: white;
+    text-decoration: none;
+}
+
+#ind-ops {
     display: flex;
-}
-
-
-#pan-ops {
-    width: 70%
-}
-
-#pan-ops p {
-    display: inline;
     font-size: 1rem;
-    margin: 15px;
 }
 
-#pan-deals {
-    font-size: 1rem;
-    font-weight: bold;
+#ind-ops a {
+    color: white;
+    text-decoration: none;
+}
+
+#ind-ops:hover {
+    text-decoration: 2px solid underline;
 }
 
 /* Hero Section */
@@ -183,13 +171,21 @@ a {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+
+    z-index: -10;
+    transition-duration: 1s;
+}
+
+#hero-sec:hover {
+    z-index: -1000000;
+    transform: scaleX(1.03);
 }
 
 #hero-msg {
     background-color: white;
     color: black;
     height: 40px;
-    width: 75%;
+    width: 70%;
     border-radius: 5px;
     font-size: 1rem;
 
@@ -198,6 +194,13 @@ a {
     align-items: center;
 
     margin-bottom: 100px;
+
+    transition-duration: 0.5s;
+}
+
+#hero-msg a {
+    text-decoration: none;
+    color: #007185;
 }
 
 /* Shop Section */
@@ -222,16 +225,41 @@ a {
     background-color: white;
     padding: 20px 1rem 15px 1rem;
     margin-top: 25px;
+
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in;
 }
 
-/* Footer */
+.box:hover {
+    transform:scale(1.05);
+    border-radius: 5px;
+}
+
 .box-img {
     height: 340px;
     margin-top: 0.75rem;
     margin-bottom: 1rem;
     background-size: cover;
+
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in;
 }
 
+#para {
+    text-decoration: none;
+    color: #007185
+}
+
+#para:hover {
+    text-decoration: 2px solid underline;
+}
+
+h2 a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Footer */
 footer {
     margin-top: 15px;
 }
@@ -247,6 +275,17 @@ footer {
     align-items: center;
 }
 
+#butt {
+    background-color: #37475A;
+    border: none;
+    color: white;
+    font-size: 1rem;
+}
+
+#butt:hover {
+    text-decoration: 1px solid underline;
+}
+
 #lsts {
     background-color: #222F3D;
     color: white;
@@ -258,36 +297,28 @@ footer {
     justify-content: space-evenly;
 }
 
+#lsts p {
+    font-size: 1.42rem;
+}
+
 #lsts a {
     color: #DDDDDD;
     font-size: 0.85rem;
     font-weight: 300;
     margin-top: 10px;
+    text-decoration: none;
 
     display: block;
 }
 
-#creds {
-    height: 70px;
-    background-color: #0F1111;
-    color: white;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#foot-logo {
-    height: 50px;
-    width: 120px;
-    background-image: url("Resources/logo.png");
-    background-size: cover;
+#lsts a:hover {
+    text-decoration: 1px solid underline;
 }
 
 #legal {
     background-color: #0F1111;
     color: #DDDDDD;
-    height: 100px
+    height: 69px
 }
 
 #links {
@@ -295,16 +326,23 @@ footer {
     justify-content: center;
     align-items: center;
 
-    border-top: 0.5px solid #CCCCCC;
-    padding: 20px;
+    border-top: 0.5px solid #a4a4a4;
+    padding: 14px;
 }
 
 #links a {
-    padding-left: 10px;
-    padding-right: 10px;
+    color: rgb(202, 202, 202);
+    text-decoration: none;
+
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#links a:hover {
+    text-decoration: 1px solid underline;
 }
 
 #copyright {
     text-align: center;
-    padding-bottom: 20px;
+    color: #bebebe;
 }
